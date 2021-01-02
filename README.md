@@ -10,7 +10,7 @@ There are two volumes you should set:
 By default, we run with uid of 1000. Change the user if you are not uid 1000.
 
 ```
-docker run --rm -v "${HOME}/.aws:/home/node/.aws:ro" -v ".:/data" ratchetdesigns/cmda:1.2.0 --function <your-function> info
+docker run --rm -v "${HOME}/.aws:/home/node/.aws:ro" -v "$(pwd):/data" ratchetdesigns/cmda:1.2.0 --function <your-function> info
 ```
 
 ## Building
